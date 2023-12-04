@@ -1,17 +1,12 @@
     function game (playerChoice, pcChoice) {
-
-
-        for (let games = 0; games <5; games++) {
-        let playerChoice;
-        let pcChoice;
         let tie = 0;
         let pcWin = 0;
         let playerWin = 0;
-        
-    
+
+        for (let games = 0; games <5; games++) {
         let choices = ['rock', 'paper', 'scissors']
-        playerChoice = prompt ('Pick')
-        pcChoice = choices[Math.floor(Math.random()*choices.length)]
+        let playerChoice = prompt ('Pick')
+        let pcChoice = choices[Math.floor(Math.random()*choices.length)]
 
     if (playerChoice === pcChoice) 
     {
@@ -36,11 +31,10 @@
         console.log (pcChoice + " " + "You won!")
         playerWin++
     }
-}
 
+}
+console.log("Wins : " + playerWin + " " +
+    "Loses : " + " " + pcWin + " " +
+    " Ties : " + tie);
 
     }
-    
-
-    
-
